@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>隐私政策 - Breathe Timer</title>
-    <meta name="description" content="Breathe Timer 移动应用的隐私政策。一款专注用户隐私的纯离线工具应用。">
+    <title>隐私政策 - freefall</title>
+    <meta name="description" content="freefall 移动应用的隐私政策。一款专注用户隐私的纯离线自由潜与闭气训练应用。">
+    <link rel="icon" type="image/png" href="icon.png">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -75,41 +76,13 @@
             align-items: center;
         }
 
-        /* Calming breathing animation indicator */
-        .breath-ring {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background: transparent;
-            border: 2px solid var(--accent);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 1.5rem;
-            position: relative;
-            animation: breathe 8s infinite ease-in-out;
-            box-shadow: 0 0 15px var(--accent-glow);
-        }
-
-        .breath-ring::after {
-            content: '';
-            position: absolute;
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            background: var(--accent);
-            opacity: 0.6;
-            animation: inner-breathe 8s infinite ease-in-out;
-        }
-
-        @keyframes breathe {
-            0%, 100% { transform: scale(0.9); box-shadow: 0 0 5px var(--accent-glow); }
-            50% { transform: scale(1.2); box-shadow: 0 0 25px rgba(79, 209, 197, 0.4); }
-        }
-
-        @keyframes inner-breathe {
-            0%, 100% { transform: scale(0.7); opacity: 0.4; }
-            50% { transform: scale(1.1); opacity: 0.8; }
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 18px;
+            box-shadow: 0 8px 24px rgba(0, 229, 255, 0.25), 0 0 1px rgba(255, 255, 255, 0.2);
+            margin-bottom: 1.25rem;
+            object-fit: cover;
         }
 
         h1 {
@@ -238,9 +211,9 @@
 <body>
     <div class="container">
         <header>
-            <div class="breath-ring"></div>
-            <h1>Breathe Timer</h1>
-            <div class="subtitle">隐私政策 • 最后更新：2026年6月13日</div>
+            <img src="icon.png" alt="freefall icon" class="app-icon">
+            <h1>freefall</h1>
+            <div class="subtitle">隐私政策 • 最后更新：2026年9月21日</div>
             <div class="lang-switch">
                 <a href="index.html">English</a>
                 <span class="separator">|</span>
@@ -250,7 +223,7 @@
 
         <main class="content">
             <section>
-                <p>Breathe Timer（简称“本应用”）是一款付费应用。本服务按“原样”提供。</p>
+                <p>freefall（简称“本应用”）是一款离线自由潜与闭气训练应用。本服务按“原样”提供。</p>
             </section>
 
             <section>

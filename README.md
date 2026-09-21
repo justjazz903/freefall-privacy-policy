@@ -1,8 +1,8 @@
-# Privacy Policy for Breathe Timer
+# Privacy Policy for freefall
 
-Last updated: June 13, 2026
+Last updated: September 21, 2026
 
-Breathe Timer (referred to as "the App") is built and maintained as a paid application. This service is provided as-is.
+freefall (referred to as "the App") is built and maintained as an offline freediving and apnea training application. This service is provided as-is.
 
 ### 1. Information Collection and Use
 The App is a **purely offline utility application**. Because the App operates strictly on your local device without any external network dependency:
