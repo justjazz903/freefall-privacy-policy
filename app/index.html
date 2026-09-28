@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get freefall</title>
+    <meta name="description" content="freefall: voice-guided breath-hold training for freedivers. Buy once, no subscription, works offline. Available on the App Store and Google Play.">
+    <meta name="theme-color" content="#05141f">
+    <link rel="icon" type="image/png" href="icon.png">
+    <style>
+        /* Self-contained on purpose: no web fonts, scripts from elsewhere or analytics. */
+        :root {
+            --bg: #05141f;
+            --card: rgba(13, 34, 51, 0.6);
+            --border: rgba(230, 244, 254, 0.1);
+            --text: #e6f4fe;
+            --muted: #90a4ae;
+            --accent: #4fd1c5;
+            --button: #e6f4fe;
+            --button-text: #05141f;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 32px 16px;
+            line-height: 1.5;
+        }
+        main {
+            width: 100%;
+            max-width: 420px;
+            text-align: center;
+        }
+        .icon {
+            width: 112px;
+            height: 112px;
+            border-radius: 26px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+        }
+        h1 {
+            font-size: 44px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-top: 20px;
+        }
+        .tagline {
+            color: var(--accent);
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-top: 2px;
+        }
+        .lede {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .stores {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 28px;
+        }
+        .store {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 64px;
+            padding: 10px 20px;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            background: var(--card);
+            color: var(--text);
+            text-decoration: none;
+        }
+        .store strong { font-size: 18px; }
+        .store span { font-size: 13px; color: var(--muted); }
+        .store.primary {
+            background: var(--button);
+            border-color: var(--button);
+            color: var(--button-text);
+            order: -1;
+        }
+        .store.primary span { color: #37505e; }
+        .store:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+        .offer {
+            margin-top: 24px;
+            font-size: 15px;
+            color: var(--muted);
+        }
+        .safety {
+            margin-top: 20px;
+            font-size: 13px;
+            color: var(--muted);
+        }
+        footer {
+            margin-top: 28px;
+            font-size: 13px;
+        }
+        footer a { color: var(--accent); text-decoration: none; }
+    </style>
+</head>
+<body>
+    <main>
+        <img class="icon" src="icon.png" alt="freefall app icon" width="112" height="112">
+        <h1>freefall</h1>
+        <p class="tagline">Freediving &amp; Apnea</p>
+        <p class="lede">Voice-guided breath-hold sessions. Build any table and follow along with your eyes closed.</p>
+
+        <div class="stores">
+            <a class="store" id="ios" href="https://apps.apple.com/us/app/freefall-freediving-apnea/id6798930059">
+                <strong>App Store</strong>
+                <span>iPhone</span>
+            </a>
+            <a class="store" id="android" href="https://play.google.com/store/apps/details?id=com.justjazz903.breathetimer">
+                <strong>Google Play</strong>
+                <span>Android</span>
+            </a>
+        </div>
+
+        <p class="offer">Buy once · No subscription · Works offline</p>
+        <p class="safety">Dry training only. Never hold your breath in water alone.</p>
+        <footer><a href="../">Privacy policy</a></footer>
+    </main>
+    <script>
+        // Put the visitor's own store first; nothing is stored or sent.
+        var ua = navigator.userAgent || '';
+        var mine = /android/i.test(ua) ? 'android' : /iphone|ipad|ipod/i.test(ua) ? 'ios' : null;
+        if (mine) document.getElementById(mine).classList.add('primary');
+    </script>
+</body>
+</html>
