@@ -22,4 +22,4 @@ Since the App does not collect any personal data, it is safe for users of all ag
 We may update our Privacy Policy from time to time. You are advised to review this page periodically for any changes. Any modifications are effective immediately upon posting to this URL.
 
 ### 6. Contact Us
-If you have any questions or suggestions about this Privacy Policy, please feel free to reach out. You can contact the developer by email at justjazz903@gmail.com.
+If you have any questions or suggestions about this Privacy Policy, please feel free to reach out. You can contact the developer by email at chenzhi@cantheon.cn.
