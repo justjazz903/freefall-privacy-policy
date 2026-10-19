@@ -6,10 +6,7 @@
     <title>隐私政策 - freefall</title>
     <meta name="description" content="freefall 移动应用的隐私政策。一款专注用户隐私的纯离线自由潜与闭气训练应用。">
     <link rel="icon" type="image/png" href="icon.png">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Self-contained system fonts for fast, reliable access in Mainland China without external network requests -->
     <style>
         :root {
             --bg-color: #05141f; /* Matching the splash screen background */
@@ -213,7 +210,7 @@
         <header>
             <img src="icon.png" alt="freefall icon" class="app-icon">
             <h1>freefall</h1>
-            <div class="subtitle">隐私政策 • 最后更新：2026年9月21日</div>
+            <div class="subtitle">隐私政策 • 生效日期：2026年9月21日 • 最后更新：2026年10月19日</div>
             <div class="lang-switch">
                 <a href="index.html">English</a>
                 <span class="separator">|</span>
@@ -223,46 +220,69 @@
 
         <main class="content">
             <section>
-                <p>freefall（简称“本应用”）是一款离线自由潜与闭气训练应用。本服务按“原样”提供。</p>
-            </section>
-
-            <section>
-                <h2>1. 信息收集与使用</h2>
-                <p>本应用是一款<strong>纯离线工具应用</strong>。由于本应用严格在您的本地设备上运行，无任何外部网络依赖：</p>
+                <p><strong>freefall自由潜闭气训练软件</strong>（简称“<strong>freefall</strong>”或“本应用”，软件包名：<code>com.justjazz903.breathetimer</code>）由<strong>宜昌市在渊文化有限公司</strong>（以下简称“我们”）开发并运营。我们深知个人信息对您的重要性，并将全力保护您的个人信息安全。</p>
                 <ul>
-                    <li><strong>无个人数据：</strong> 我们不收集、存储、传输或共享任何个人信息、设备标识符、位置或使用统计数据。</li>
-                    <li><strong>离线运行：</strong> 本应用完全在您的设备本地运行，不需要互联网访问或网络权限即可工作。</li>
+                    <li><strong>开发者 / 运营主体：</strong>宜昌市在渊文化有限公司</li>
+                    <li><strong>企业注册地址：</strong>宜昌市西陵区东山大道56号2楼1134室</li>
+                    <li><strong>统一社会信用代码：</strong>91420502MAKAC24C74</li>
+                    <li><strong>工信部 APP 备案号：</strong>鄂ICP备2026033690号-2A</li>
+                    <li><strong>软件著作权认证号：</strong>软著认000573796号（电子认证第 R20260000169078 号）</li>
                 </ul>
             </section>
 
             <section>
-                <h2>2. 设备权限</h2>
-                <p>本应用不需要访问您设备上的任何敏感权限（例如您的相机、麦克风、通讯录、位置信息、存储空间或相册）。</p>
+                <h2>1. 信息收集与使用说明</h2>
+                <p>本应用是一款<strong>100% 纯本地单机离线工具应用</strong>。本应用严格在您的移动设备本地运行，无任何远程服务器或外部网络依赖：</p>
+                <ul>
+                    <li><strong>不收集任何个人信息：</strong>本应用无需注册或登录账号，不收集、不存储、不上传、不传输、不共享您的任何个人身份信息（如姓名、手机号、邮箱、身份证号）、设备标识符（如 IMEI、OAID、MAC 地址、Android ID）、位置信息、通讯录、通话记录、短信或应用安装列表。</li>
+                    <li><strong>纯本地数据存储：</strong>您在应用内创建、编辑的呼吸与闭气训练计划以及界面/语音语言偏好，仅保存在您设备本地的应用私有存储空间（AsyncStorage）及本地缓存目录中。您可以随时在应用内编辑、删除单个或全部自定义训练计划，或通过卸载本应用彻底清除所有本地数据。</li>
+                </ul>
             </section>
 
             <section>
-                <h2>3. 第三方服务</h2>
-                <p>本应用未集成任何收集、监控或跟踪用户信息的第三方 SDK、分析框架、足迹共享提供商或广告网络。</p>
+                <h2>2. 设备权限调用说明</h2>
+                <p>本应用遵循“最小必要”原则，<strong>不申请、不调用任何敏感设备权限</strong>（包括但不限于：相机、麦克风/录音、位置信息、通讯录、电话、短信、日历、相册或外部公共存储读写权限）。</p>
+                <ul>
+                    <li><strong>音频播放与后台运行支持：</strong>仅在您主动开启训练计时期间，本应用使用系统基础的前台媒体播放服务（<code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code>）、音频焦点设置（<code>MODIFY_AUDIO_SETTINGS</code>）、屏幕常亮/唤醒锁（<code>WAKE_LOCK</code>）与震动反馈（<code>VIBRATE</code>），以确保闭气训练过程中语音引导与倒计时不被系统中断。训练结束后即刻释放。</li>
+                </ul>
             </section>
 
             <section>
-                <h2>4. 儿童隐私</h2>
-                <p>由于本应用不收集任何个人数据，因此它对所有年龄段的用户（包括儿童）都是安全的。我们不会有意收集任何人的个人身份信息。</p>
+                <h2>3. 第三方 SDK 与对外共享说明</h2>
+                <p>本应用<strong>未集成任何收集用户个人信息的第三方 SDK</strong>、统计分析框架、广告插件、社交分享插件或推送服务。由于我们不收集任何用户数据，因此不存在向任何第三方共享、转让或公开披露您个人信息的情况。</p>
             </section>
 
             <section>
-                <h2>5. 隐私政策的变更</h2>
-                <p>我们可能会不时更新我们的隐私政策。建议您定期查看此页面以了解任何变更。任何修改在发布到此 URL 后立即生效。</p>
+                <h2>4. 您的权利（查询、更正、删除与撤回同意）</h2>
+                <ul>
+                    <li><strong>管理与删除本地数据：</strong>您可随时在应用首页对任意训练计划执行编辑或删除操作；卸载本应用即可一键清除所有本地存储记录。</li>
+                    <li><strong>撤回同意：</strong>您可随时通过系统设置清除本应用数据或卸载本应用，以撤回对本隐私政策的同意。</li>
+                </ul>
             </section>
 
             <section>
-                <h2>6. 联系我们</h2>
-                <p>如果您对本隐私政策有任何问题或建议，请随时与我们联系。您可以通过电子邮件联系开发者：<a href="mailto:justjazz903@gmail.com" style="color: var(--accent); text-decoration: none;">justjazz903@gmail.com</a>。</p>
+                <h2>5. 未成年人及儿童隐私保护</h2>
+                <p>由于本应用完全离线运行且不收集任何个人身份信息，因此不会采集任何未成年人或儿童的个人信息。未成年人应在监护人指导下安全进行陆地呼吸练习。</p>
+            </section>
+
+            <section>
+                <h2>6. 隐私政策的变更</h2>
+                <p>我们可能会适时修订本隐私政策。任何更新将在本页面发布后生效，并在应用内提供查阅入口。</p>
+            </section>
+
+            <section>
+                <h2>7. 联系我们</h2>
+                <p>如果您对本隐私政策或个人信息保护有任何疑问、意见或建议，可通过以下方式与我们联系，我们将在收到请求后的 15 个工作日内予以回复：</p>
+                <ul>
+                    <li><strong>公司名称：</strong>宜昌市在渊文化有限公司</li>
+                    <li><strong>联系地址：</strong>湖北省宜昌市西陵区东山大道56号2楼1134室</li>
+                    <li><strong>联系邮箱：</strong><a href="mailto:justjazz903@gmail.com" style="color: var(--accent); text-decoration: none;">justjazz903@gmail.com</a></li>
+                </ul>
             </section>
         </main>
 
         <footer>
-            <p>&copy; 2026 justjazz903. 倾心构建，注重用户隐私。</p>
+            <p>&copy; 2026 宜昌市在渊文化有限公司 版权所有 • <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">鄂ICP备2026033690号-2A</a></p>
         </footer>
     </div>
 </body>
